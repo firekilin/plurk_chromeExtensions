@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Plurk Chrome Extenions</title>
+  <meta charset="utf-8">
+
+  <meta name="viewport" content="width=device-width, initial-scale=yes, user-scalable=yes">
+  <!--jquery-->
+  <script src="../js/jquery.min.js"></script>
+  <!--bootstrap-->
+  <link href="../css/bootstrap.min.css" rel="stylesheet" />
+  <script src="../js/bootstrap.bundle.min.js"></script>
+  <link href="../css/plurk.css" rel="stylesheet" />
+  <script src="../js/alertModel.js"></script>
+  <script src="../src/oauth_worker.js"></script>
+  <script src="../js/plurk.js"></script>
+
+</head>
+
+<body>
+  <div class="loading" id="loading" style="display: none;">
+    <img src="../images/loading.gif" class="loadingimg">
+  </div>
+  <div class="container" style="margin-top: 10px;">
+    <div id="show"></div>
+  </div>
+
+
+  <!-- Modal -->
+  <div class="modal fade" id="alertModel" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+    aria-labelledby="staticBackdropLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" id="alertModelHeader">通知</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body" id="alertModelBody">
+        </div>
+        <div class="modal-footer" id="alertModelFooter">
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>
